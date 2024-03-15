@@ -1,0 +1,278 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+nav{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(31, 31, 31);
+z-index: 9999;
+position: fixed;
+top: 0px;
+left:0px;
+padding: 1rem 2rem;
+width: 100%;
+overflow: hidden;
+}
+ul{
+    list-style: none;
+    right:0px;
+    gap: 2rem;
+    padding-right: 10px;
+    display: flex;
+    color: white;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background:blue;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.logo{
+    font-size: 4rem;
+    margin-right: 200px;
+    color: white;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.btn{
+    margin-top:30px;
+    padding: 10px;
+    background-color: rgb(23, 23, 179);
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+header{
+    background-image:url('https://img.freepik.com/free-photo/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai_188544-13382.jpg?size=626&ext=jpg&uid=R135370195&ga=GA1.2.988423639.1698324917&semt=ais');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+#home{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 220px;
+    font-size: 3
+    
+    0px;
+}
+.overlay{
+    height: 100vh;
+    background: (rgba(0,0,0,-5));
+}
+#mobile{
+    height: 100px;
+    overflow:hidden;
+    display:none;
+    position:relative;
+    top:0px;
+    left:0px;
+
+
+}
+#mobile ul li{
+    justify-content: flex-end;
+    color:white;
+    margin: -38px 4s0px;
+    font-size: 1rem;
+    padding:-25px 50px;
+  
+  
+}
+#mobile ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:789px) {
+    #mobile{
+        display:block;
+    }
+    #navbar{
+        display:none;
+
+    }
+    #home{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+        margin: 20px;
+       
+    }
+    .logo1{
+        color: white;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: rgb(105, 105, 105);
+        width: 100%;
+      
+    }
+    .title{
+        text-align: center;
+        width: 100%;
+       color: yellow;
+      
+    }
+    
+
+}
+#menu{
+    display: grid;
+    padding: 0px;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+    background-color: white;
+    min-height: 100vh;
+}
+.heading{
+    text-align: center;
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+    padding: 20px 0px 30px 0px;
+    text-align: center;
+}
+.heading>h4{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.card{
+    margin: 10px 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto,1fr;
+    box-shadow: 0px 0px 10px 5px black;
+}
+.card img{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px 10px 10px 10px;
+    filter: grayscale(0%);
+}
+.card img:hover{
+    filter: grayscale(100%);
+
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap:10px;
+}
+.details-sub{
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+.details-sub h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.details button{
+    border:none;
+    background-color: blue;
+    width: 180px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 70px;
+}
+#about{
+    padding: 25px 0px;
+}
+.about_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+.about_column{
+    flex:2;
+}
+#btn1{
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: blue;
+    border-radius: 20px;
+}
+#about h1{
+    text-align: center;
+}
+.about_column img{
+    height: 500px;
+    width: 500px;
+    object-fit: fill;
+    border-radius: 50px;
+    margin: auto;
+}
+#order{
+    min-height: 100vh;
+    background-color: rgb(247, 240, 232);
+    color:rgb(17, 16, 16) ;
+}
+#order h1{
+    text-align: center;
+    padding: 10px 0px 40px 0px;
+}
+form{
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    padding:10px;
+    width: 350px;
+    background-color:white;
+    border-radius: 10px;
+}
+.inp_box{
+    width:260px;
+    height: 20px;
+    padding: 10px 0px 20px 0px;
+    margin :20px 10px 10px 35px;
+    outline: none;
+    border: 1px solid rgb(59, 59, 59);
+     border-radius: 10px;
+}
+.inp_box_textarea{
+    padding: 20px;
+    margin: 15px;
+}
+#btn2{
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(180, 180, 197);
+    background-color: blue;
+    margin-left: 20px;
+    width: 130px;
+cursor: pointer;
+
+    
+}
+button:hover{
+    background:green;
+}
+#btn2:hover{
+    background:green;
+}
+footer{
+    background-color: rgb(34, 32, 32);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
