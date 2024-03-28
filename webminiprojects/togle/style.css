@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+align-items: center;
+justify-content: center;
+ 
+    
+}
+
+button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    border-radius: 5px;
+    background: blue;
+ 
+
+}
+button:hover{
+    background: red;
+}
+p{
+    font-size: larger;
+    font-family: cursive;
+    font-weight: 600;
+
+position:absolute;
+top: 20%;
+left: 30%;
+color: rgb(239, 243, 10);
+
+}
